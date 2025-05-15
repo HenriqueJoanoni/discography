@@ -11,12 +11,27 @@
     "ios": {
       "supportsTablet": true
     },
+    "androidStatusBar": {
+      "backgroundColor": "#384B70",
+      "barStyle": "light-content",
+      "translucent": false
+    },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#384B70"
       },
-      "edgeToEdgeEnabled": true
+      "statusBar": {
+        "backgroundColor": "#384B70",
+        "barStyle": "light-content"
+      },
+      "softwareKeyboardLayoutMode": "pan",
+      "windowSoftInputMode": "adjustResize",
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.henriquedev.Discografia"
     },
     "web": {
       "bundler": "metro",
@@ -31,7 +46,19 @@
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+          "backgroundColor": "#384B70",
+          "androidStatusBar": {
+            "backgroundColor": "#384B70",
+            "barStyle": "light-content",
+            "translucent": false
+          }
+        }
+      ],
+      "expo-sqlite",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow access to your photos to upload vinyl artwork."
         }
       ]
     ],
